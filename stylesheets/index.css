@@ -1,0 +1,10 @@
+header {
+  height: 150px;
+}
+nav {
+  background-color: #800000;
+  height: 50px;
+}
+nav li {
+  display: inline-block;
+}
