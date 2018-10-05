@@ -1,6 +1,27 @@
+/* HEADER STYLING */
 header {
   height: 150px;
+  display: grid;
+  grid-template-columns: 350px auto 150px 150px 50px;
 }
+header div {
+  align-self: center;
+}
+.title {
+  text-align: center;
+}
+header h1,
+header h2,
+header p {
+  color: #666;
+}
+header h1 {
+  font-size: 30px;
+}
+header h2 {
+  font-weight: bold;
+}
+/* NAVBAR STYLING */
 nav {
   display: flex;
   justify-content: center;
@@ -9,7 +30,11 @@ nav {
 }
 nav ul {
   display: flex;
-  align-items: center;
+}
+nav li {
+  display: flex;
+  height: 100%;
+  align-items:center
 }
 nav a {
   text-decoration: none;
