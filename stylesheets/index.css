@@ -46,4 +46,10 @@ nav a {
 nav a:hover {
   color: #cc0000;
 }
-
+/* HERO STYLING */
+.hero {
+  height: 500px;
+  background-image: url("../resources/adidas-close.jpg");
+  background-size: cover;
+  background-color: #62666d;
+}
