@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+  color: white;
+}
 /* HEADER STYLING */
 header {
   height: 150px;
@@ -48,7 +52,6 @@ nav li {
 }
 nav a {
   font-size: 14px;
-  text-decoration: none;
   padding: 0 1rem;
   text-align: center;
   color: white;
@@ -59,7 +62,7 @@ nav a:hover {
 }
 /* HERO STYLING */
 .hero {
-  height: 500px;
+  height: 600px;
   background-image: url("../resources/adidas-close-comp.jpg");
   background-size: cover;
   background-color: #62666d;
@@ -74,7 +77,7 @@ nav a:hover {
 .hero_content h2 {
   font-size: 20px;
   font-family: sans-serif;
-  color: #999;
+  color: #aaa;
   font-weight: bold;
   padding-bottom: 20px;
 }
@@ -98,4 +101,24 @@ nav a:hover {
   background-color: #ab1f1f;
   border-radius: 20px;
   border: none;
+  transition: 0.3s linear;
+}
+.hero_content button:hover {
+  background-color: black;
+  border: 1px solid white;
+}
+.carousel_controls {
+  position: absolute;
+  top: 680px;
+  left: 80px;
+}
+.carousel_controls a,
+.carousel_controls p {
+  color: #aaa;
+}
+.carousel_controls a {
+  transition: color 0.4s ease;
+}
+.carousel_controls a:hover {
+  color: #cc0000;
 }
