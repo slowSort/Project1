@@ -37,6 +37,20 @@ header h2 {
 header a {
   color: white;
 }
+button {
+  font-size: 14px;
+  font-family: sans-serif;
+  color: white;
+  padding: 12px;
+  background-color: #ab1f1f;
+  border-radius: 20px;
+  border: none;
+  transition: 0.3s linear;
+}
+button:hover {
+  background-color: black;
+  border: 1px solid white;
+}
 /* NAVBAR STYLING */
 nav {
   font-family: sans-serif;
@@ -100,20 +114,6 @@ nav a:hover {
   color: white;
   padding-bottom: 35px;
 }
-.hero_content button {
-  font-size: 14px;
-  font-family: sans-serif;
-  color: white;
-  padding: 12px;
-  background-color: #ab1f1f;
-  border-radius: 20px;
-  border: none;
-  transition: 0.3s linear;
-}
-.hero_content button:hover {
-  background-color: black;
-  border: 1px solid white;
-}
 .carousel_controls {
   position: absolute;
   top: 680px;
@@ -152,7 +152,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
 }
-article {
+.section article {
   margin: 20px 20px 20px 0;
   height: 85%;
   overflow:hidden;
@@ -171,7 +171,7 @@ article h3 {
 /* Surfer Section Styling */
 #surfer {
   position: relative;
-  height: 600px;
+  height: 550px;
   margin: 0;
 }
 #surfer:before {
@@ -192,12 +192,24 @@ article h3 {
 .section_opaque {
   grid-column-start: 2;
   background-color: rgba(255,255,255,.8);
-  
+}
+.opaque_content {
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-gap: 20px;
+  align-content: space-between;
+  margin: 50px;
 }
 .top_bar {
   grid-column: 1 / span 2;
+  color: #666; 
 }
-
+#surfer h2 {
+  font-size: 20px; 
+  margin-bottom: 10px;
+}
+#surfer h3 {
+  font-size: 16px;
+}
