@@ -164,6 +164,7 @@ article h1 {
   margin-bottom: 30px;
 }
 article h3 {
+  font-family: arial;
   font-size: 12px;
   margin-bottom: 20px;
 }
@@ -245,7 +246,7 @@ section .ad_container{
   border-bottom: 1px solid black;
 }
 .small_card article {
-  padding: 0 30px 15px 30px;
+  padding: 15px 30px 15px 30px;
 }
 .card_container h2 {
   margin-bottom: 15px;
@@ -292,4 +293,36 @@ section .ad_space:before {
 .ad_space h2,
 .ad_space p {
   color: white;
+}
+/* Dates Section Styling */
+.card_container.bigCards {
+  grid-template-columns: repeat(3,1fr);
+}
+.bigCards .heading {
+  grid-column: 1 / span 3;
+}
+.image_wrap {
+  position: relative;
+}
+.date_box {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  width: 10%;
+  height: 15%;
+  color: white;
+  font-family: arial;
+  text-align: center;
+}
+.date {
+  background-color: #ab1f1f;
+  padding: 15px 10px 15px 10px;
+  font-weight: bold;
+}
+.month {
+  background-color: #821603;
+  padding: 10px;
+  font-size: 14px;
 }
