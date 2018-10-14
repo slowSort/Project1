@@ -20,7 +20,9 @@ header div {
 header h1,
 header h2,
 header p,
-article {
+article,
+section
+{
   color: #666;
 }
 header h2,
@@ -165,13 +167,14 @@ article h3 {
   font-size: 12px;
   margin-bottom: 20px;
 }
-.card a {
+.card a,
+.small_card a {
   color: #cc0000;
 }
 /* Surfer Section Styling */
 #surfer {
   position: relative;
-  height: 550px;
+  height: 600px;
   margin: 0;
 }
 #surfer:before {
@@ -200,16 +203,69 @@ article h3 {
   grid-template-rows: 1fr 2fr;
   grid-gap: 20px;
   align-content: space-between;
-  margin: 50px;
+  margin: 80px;
 }
 .top_bar {
   grid-column: 1 / span 2;
   color: #666; 
 }
 #surfer h2 {
+  margin-top: 40px;
   font-size: 20px; 
   margin-bottom: 10px;
 }
 #surfer h3 {
   font-size: 16px;
+}
+/* Card Showcase Section Styling */
+section .card_container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 1fr 2fr;
+  grid-gap: 30px;
+}
+.card_container .heading {
+  grid-column: 1 / span 4;
+}
+.card_container .heading { 
+  align-self: center;
+}
+.card_container .heading h2 {
+  font-size: 20px;
+}
+.small_card {
+  background-color: #F1F0ED;
+  border-bottom: 1px solid black;
+}
+.small_card article {
+  padding: 0 30px 15px 30px;
+}
+.card_container h2 {
+  margin-bottom: 15px;
+}
+.small_card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+/* Advertising Section Styling */
+section .ad_space {
+  position: relative;
+  height: 400px;
+  margin: 0;
+}
+section .ad_space:before {
+  content:"";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+  background-image: url("../resources/cowboy-comp.jpeg");
+  background-size: cover;
+     -moz-transform: scaleX(-1);
+       -o-transform: scaleX(-1);  
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
