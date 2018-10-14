@@ -218,19 +218,26 @@ article h3 {
   font-size: 16px;
 }
 /* Card Showcase Section Styling */
-section .card_container {
+section .card_container,
+section .ad_container{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-template-rows: 1fr 2fr;
   grid-gap: 30px;
 }
-.card_container .heading {
+.card_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+}
+.heading {
   grid-column: 1 / span 4;
 }
-.card_container .heading { 
+.heading { 
   align-self: center;
 }
-.card_container .heading h2 {
+.heading h2 {
   font-size: 20px;
 }
 .small_card {
@@ -243,7 +250,8 @@ section .card_container {
 .card_container h2 {
   margin-bottom: 15px;
 }
-.small_card img {
+.small_card img,
+.ad_space img{
   width: 100%;
   height: 150px;
   object-fit: cover;
@@ -252,7 +260,16 @@ section .card_container {
 section .ad_space {
   position: relative;
   height: 400px;
-  margin: 0;
+  padding: 0 100px 0 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.red_filter {
+  background-color: rgba(120,0,0,0.8);
+  z-index: -1;
 }
 section .ad_space:before {
   content:"";
@@ -261,11 +278,18 @@ section .ad_space:before {
   height: 100%;
   top: 0%;
   left: 0%;
-  z-index: -1;
+  z-index: -2;
   background-image: url("../resources/cowboy-comp.jpeg");
   background-size: cover;
      -moz-transform: scaleX(-1);
        -o-transform: scaleX(-1);  
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
+}
+.ad_space h2 {
+  margin-bottom: 10px;
+}
+.ad_space h2,
+.ad_space p {
+  color: white;
 }
