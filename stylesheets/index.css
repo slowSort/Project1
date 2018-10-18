@@ -263,7 +263,7 @@ footer a {
 }
 /* Card Showcase Section Styling */
 section .card_container,
-section .ad_container{
+section .banner_container{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-template-rows: 1fr 2fr;
@@ -299,13 +299,13 @@ section .ad_container{
   margin-bottom: 15px;
 }
 .small_card img,
-.ad_space img{
+.banner_space img{
   width: 100%;
   height: 150px;
   object-fit: cover;
 }
 /* Advertising Section Styling */
-section .ad_space {
+section .banner_space {
   position: relative;
   height: 400px;
   padding: 0 100px 0 100px;
@@ -318,7 +318,7 @@ section .ad_space {
   background-color: rgba(120,0,0,0.8);
   z-index: -1;
 }
-section .ad_space:before {
+section .banner_space:before {
   content:"";
   position: absolute;
   width: 100%;
@@ -333,11 +333,11 @@ section .ad_space:before {
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
 }
-.ad_space h2 {
+.banner_space h2 {
   margin-bottom: 10px;
 }
-.ad_space h2,
-.ad_space p {
+.banner_space h2,
+.banner_space p {
   color: white;
 }
 /* Dates Section Styling */
@@ -374,8 +374,7 @@ section .ad_space:before {
   background-color: #821603;
   padding: 10px;
   font-size: 14px;
-}
-/* Footer Section Styling */
+} /* Footer Section Styling */
 .black_filter {
   background-color: rgba(0,0,0,0.85);
   z-index: -1;
